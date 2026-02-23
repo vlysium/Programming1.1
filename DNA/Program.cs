@@ -6,7 +6,7 @@
         {
             string templateStrand = "GAGCCTACTAACGGGAT";
             string newStrand      = "CATCGTAATGACGGCCT";
-            int hammingDistance = GetGammingDistance(templateStrand, newStrand);
+            int hammingDistance = GetHammingDistance(templateStrand, newStrand);
             Console.WriteLine($"Hamming distance: {hammingDistance}");
         }
 
@@ -30,7 +30,7 @@
         /// The number of positions at which the corresponding symbols in the two strands are different. Returns 0 if
         /// the strands are identical after padding.
         /// </returns>
-        static int GetGammingDistance(string templateStrand, string newStrand)
+        static int GetHammingDistance(string templateStrand, string newStrand)
         {
             int hammingDistance = 0;
 
