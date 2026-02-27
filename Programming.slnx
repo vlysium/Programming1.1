@@ -52,10 +52,12 @@
 
 	<Folder Name="/ClassesAndObjects/">
 		<Project Path="ClassesAndObjects/DeckOfCards/DeckOfCards.csproj" />
+		<Project Path="ClassesAndObjects/Yearbook/Yearbook.csproj" />
 	</Folder>
 
 	<Folder Name="/SelfStudy/">
 		<Project Path="SelfStudy/BMI/BMI.csproj" />
 	</Folder>
+	<Project Path="Yearbook/Yearbook.csproj" />
 
 </Solution>
