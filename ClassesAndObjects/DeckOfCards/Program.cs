@@ -4,28 +4,37 @@
     {
         static void Main(string[] args)
         {
-            // create an array to hold 52 cards in the deck
-            Card[] deck = new Card[52];
+            Deck deck = new Deck();
 
-            // get all possible suits and values from the enums
-            Suit[] suits = (Suit[])Enum.GetValues(typeof(Suit));
-            Value[] values = (Value[])Enum.GetValues(typeof(Value));
+            Console.WriteLine("Welcome to the Deck of Cards program!");
+            Console.WriteLine("Write \"display\" to see the deck of cards, \"shuffle\" to shuffle the deck, \"draw\" to draw a random card, or \"exit\" to quit the program.");
+            string userInput = "";
 
-            // populate the deck with cards by iterating through each suit and value
-            int index = 0;
-            foreach (Suit suit in suits)
+            while (userInput != "exit")
             {
-                foreach (Value value in values)
+                Console.Write("Enter a command: ");
+                userInput = Console.ReadLine()?.ToLower();
+
+                switch (userInput)
                 {
-                    deck[index] = new Card(value, suit);
-                    index++;
+                    case "display":
+                        deck.Display();
+                        break;
+                    case "shuffle":
+                        deck.Shuffle();
+                        Console.WriteLine("The deck has been shuffled.");
+                        break;
+                    case "draw":
+                        Card drawnCard = deck.DrawCard();
+                        Console.WriteLine($"You drew: {drawnCard}");
+                        break;
+                    case "exit":
+                        Console.WriteLine("Exiting the program. Goodbye!");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid command. Please try again.");
+                        break;
                 }
-            }
-            
-            // display all the cards
-            foreach (Card card in deck)
-            {
-                Console.WriteLine(card);
             }
         }
     }
