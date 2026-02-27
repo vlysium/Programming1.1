@@ -1,53 +1,57 @@
 <Solution>
 
 	<Folder Name="/VariablesAndDatatypes/">
-		<Project Path="VariablesAndDatatypes/StarsAndStripes/StarsAndStripes.csproj" />
 		<Project Path="VariablesAndDatatypes/ALetterToYourself/ALetterToYourself.csproj" />
-		<Project Path="VariablesAndDatatypes/TemperatureConverter/TemperatureConverter.csproj" />
-		<Project Path="VariablesAndDatatypes/StepCounter/StepCounter.csproj" />
-		<Project Path="VariablesAndDatatypes/Speedometer/Speedometer.csproj" />
-		<Project Path="VariablesAndDatatypes/LottoNumbers/LottoNumbers.csproj" />
 		<Project Path="VariablesAndDatatypes/Birthday/Birthday.csproj" />
 		<Project Path="VariablesAndDatatypes/ChristmasEve/ChristmasEve.csproj" />
-  	</Folder>
+		<Project Path="VariablesAndDatatypes/LottoNumbers/LottoNumbers.csproj" />
+		<Project Path="VariablesAndDatatypes/Speedometer/Speedometer.csproj" />
+		<Project Path="VariablesAndDatatypes/StarsAndStripes/StarsAndStripes.csproj" />
+		<Project Path="VariablesAndDatatypes/StepCounter/StepCounter.csproj" />
+		<Project Path="VariablesAndDatatypes/TemperatureConverter/TemperatureConverter.csproj" />
+	</Folder>
 
 	<Folder Name="/Conditions/">
-		<Project Path="Conditions/HeadsOrTails/HeadsOrTails.csproj" />
-		<Project Path="Conditions/TheDice/TheDice.csproj" />
-		<Project Path="Conditions/FreezingPoint/FreezingPoint.csproj" />
-		<Project Path="Conditions/BallAndCups/BallAndCups.csproj" />
 		<Project Path="Conditions/AirportParkingLot/AirportParkingLot.csproj" />
+		<Project Path="Conditions/BallAndCups/BallAndCups.csproj" />
+		<Project Path="Conditions/FreezingPoint/FreezingPoint.csproj" />
+		<Project Path="Conditions/HeadsOrTails/HeadsOrTails.csproj" />
 		<Project Path="Conditions/MorseCode/MorseCode.csproj" />
+		<Project Path="Conditions/TheDice/TheDice.csproj" />
 	</Folder>
 
 	<Folder Name="/Loops/">
+		<Project Path="Loops/AnimalSymphony/AnimalSymphony.csproj" />
 		<Project Path="Loops/GuessTheColor/GuessTheColor.csproj" />
+		<Project Path="Loops/Nim/Nim.csproj" />
+		<Project Path="Loops/PiggyBank/PiggyBank.csproj" />
+		<Project Path="Loops/RockPaperScissors/RockPaperScissors.csproj" />
 		<Project Path="Loops/Scrabble/Scrabble.csproj" />
 		<Project Path="Loops/TurnTheLightsOff/TurnTheLightsOff.csproj" />
-		<Project Path="Loops/RockPaperScissors/RockPaperScissors.csproj" />
-		<Project Path="Loops/AnimalSymphony/AnimalSymphony.csproj" />
-		<Project Path="Loops/PiggyBank/PiggyBank.csproj" />
-		<Project Path="Loops/Nim/Nim.csproj" />
 	</Folder>
 
 	<Folder Name="/Arrays/">
+		<Project Path="Arrays/Mozart/Mozart.csproj" />
 		<Project Path="Arrays/PowerConsumption/PowerConsumption.csproj" />
 		<Project Path="Arrays/VinosBlancos/VinosBlancos.csproj" />
-		<Project Path="Arrays/Mozart/Mozart.csproj" />
 	</Folder>
 
 	<Folder Name="/Methods/">
 		<Project Path="Methods/Beep/Beep.csproj" />
-		<Project Path="Methods/EmptyBarrels/EmptyBarrels.csproj" />
-		<Project Path="Methods/TheSpaceship/TheSpaceship.csproj" />
-		<Project Path="Methods/PasswordGenerator/PasswordGenerator.csproj" />
 		<Project Path="Methods/DNA/DNA.csproj" />
+		<Project Path="Methods/EmptyBarrels/EmptyBarrels.csproj" />
 		<Project Path="Methods/Hexadecimal/Hexadecimal.csproj" />
+		<Project Path="Methods/PasswordGenerator/PasswordGenerator.csproj" />
+		<Project Path="Methods/TheSpaceship/TheSpaceship.csproj" />
 	</Folder>
 
 	<Folder Name="/Enums/">
-		<Project Path="Enums/TheFourSeasons/TheFourSeasons.csproj" />
 		<Project Path="Enums/SortingHat/SortingHat.csproj" />
+		<Project Path="Enums/TheFourSeasons/TheFourSeasons.csproj" />
+	</Folder>
+
+	<Folder Name="/ClassesAndObjects/">
+		<Project Path="ClassesAndObjects/DeckOfCards/DeckOfCards.csproj" />
 	</Folder>
 
 	<Folder Name="/SelfStudy/">
