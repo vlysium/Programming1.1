@@ -58,6 +58,5 @@
 	<Folder Name="/SelfStudy/">
 		<Project Path="SelfStudy/BMI/BMI.csproj" />
 	</Folder>
-	<Project Path="Yearbook/Yearbook.csproj" />
 
 </Solution>
