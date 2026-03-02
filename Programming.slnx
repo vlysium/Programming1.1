@@ -52,6 +52,7 @@
 
 	<Folder Name="/ClassesAndObjects/">
 		<Project Path="ClassesAndObjects/DeckOfCards/DeckOfCards.csproj" />
+		<Project Path="ClassesAndObjects/PlasticFantastic/PlasticFantastic.csproj" />
 		<Project Path="ClassesAndObjects/Superheroes/Superheroes.csproj" />
 		<Project Path="ClassesAndObjects/Yearbook/Yearbook.csproj" />
 	</Folder>
