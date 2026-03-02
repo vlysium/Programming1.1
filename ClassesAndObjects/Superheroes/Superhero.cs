@@ -2,9 +2,9 @@ namespace Superheroes
 {
     public class Superhero
     {
-        private string _name;
-        private string _superpower;
-        private string _weakness;
+        private readonly string _name;
+        private readonly string _superpower;
+        private readonly string _weakness;
 
         /// <summary>
         /// Initializes a new instance of the Superhero class with the specified name, superpower, and weakness.

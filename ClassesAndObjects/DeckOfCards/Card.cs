@@ -6,15 +6,8 @@
     public enum Suit { Diamonds, Clubs, Hearts, Spades }
     public class Card
     {
-        /// <summary>
-        /// Gets the value of the card (e.g., Ace, Two, etc.).
-        /// </summary>
-        public Value Value { get; }
-        
-        /// <summary>
-        /// Gets the suit of the card (e.g., Diamonds, Clubs, etc.).
-        /// </summary>
-        public Suit Suit { get; }
+        private Value _value;
+        private Suit _suit;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Card"/> class with the specified value and suit.
@@ -27,9 +20,19 @@
         /// </param>
         public Card(Value value, Suit suit)
         {
-            Value = value;
-            Suit = suit;
+            _value = value;
+            _suit = suit;
         }
+
+        /// <summary>
+        /// Gets the value of the card (e.g., Ace, Two, etc.).
+        /// </summary>
+        public Value Value { get => _value; }
+        
+        /// <summary>
+        /// Gets the suit of the card (e.g., Diamonds, Clubs, etc.).
+        /// </summary>
+        public Suit Suit { get => _suit; }
 
         /// <summary>
         /// Returns the string representation of the card.

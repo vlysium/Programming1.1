@@ -3,7 +3,7 @@
 
     public class Deck
     {
-        public Card[] Cards { get; }
+        private readonly Card[] _cards;
 
         private readonly Random _random = new Random();
 
@@ -12,7 +12,7 @@
         /// </summary>
         public Deck()
         {
-            Cards = new Card[52];
+            _cards = new Card[52];
             Suit[] suits = (Suit[])Enum.GetValues(typeof(Suit));
             Value[] values = (Value[])Enum.GetValues(typeof(Value));
 
@@ -21,18 +21,20 @@
             {
                 foreach (Value value in values)
                 {
-                    Cards[index] = new Card(value, suit);
+                    _cards[index] = new Card(value, suit);
                     index++;
                 }
             }
         }
+
+        public Card[] Cards { get => _cards; }
 
         /// <summary>
         /// Displays all the cards in the deck by printing their string representations to the console.
         /// </summary>
         public void Display()
         {
-            foreach (Card card in Cards)
+            foreach (Card card in _cards)
             {
                 Console.WriteLine(card);
             }
@@ -45,13 +47,13 @@
         public void Shuffle()
         {
             // backwards loop
-            for (int i = Cards.Length - 1; i > 0; i--)
+            for (int i = _cards.Length - 1; i > 0; i--)
             {
                 // swap Cards[i] with Cards[j]
                 int j = _random.Next(0, i + 1);
-                Card temp = Cards[i]; // store the current card in a temporary variable
-                Cards[i] = Cards[j];
-                Cards[j] = temp;
+                Card temp = _cards[i]; // store the current card in a temporary variable
+                _cards[i] = _cards[j];
+                _cards[j] = temp;
             }
         }
 
@@ -62,7 +64,7 @@
         /// <returns>A randomly selected card from the deck.</returns>
         public Card DrawCard()
         {
-            return Cards[_random.Next(Cards.Length)];
+            return _cards[_random.Next(_cards.Length)];
         }
     }
 }
