@@ -64,6 +64,7 @@
 
 	<Folder Name="/Collections/">
 		<Project Path="Collections/Planets/Planets.csproj" />
+		<Project Path="Collections/TelephoneQueue/TelephoneQueue.csproj" />
 	</Folder>
 
 </Solution>
