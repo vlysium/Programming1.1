@@ -62,4 +62,8 @@
 		<Project Path="SelfStudy/BMI/BMI.csproj" />
 	</Folder>
 
+	<Folder Name="/Collections/">
+		<Project Path="Collections/Planets/Planets.csproj" />
+	</Folder>
+
 </Solution>
