@@ -63,6 +63,7 @@
 	</Folder>
 
 	<Folder Name="/Collections/">
+		<Project Path="Collections/Palindrome/Palindrome.csproj" />
 		<Project Path="Collections/Planets/Planets.csproj" />
 		<Project Path="Collections/TelephoneQueue/TelephoneQueue.csproj" />
 	</Folder>
