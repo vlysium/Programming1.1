@@ -7,7 +7,7 @@ namespace AGoodMovie
 		private string _title;
 		private Genre[] _genres;
 		private int _yearOfPublication;
-		private int _playingTimeInMinutes;
+		private int _durationInMinutes;
 		private string _shortDescription;
 
 		/// <summary>
@@ -38,12 +38,12 @@ namespace AGoodMovie
 		}
 
 		/// <summary>
-		/// Gets or sets the playing time of the movie in minutes.
+		/// Gets or sets the duration of the movie in minutes.
 		/// </summary>
-		public int PlayingTimeInMinutes
+		public int DurationInMinutes
 		{
-			get { return _playingTimeInMinutes; }
-			set { _playingTimeInMinutes = value; }
+			get { return _durationInMinutes; }
+			set { _durationInMinutes = value; }
 		}
 
 		/// <summary>
@@ -58,20 +58,20 @@ namespace AGoodMovie
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Movie"/> class with default values.
 		/// The title is set to an empty string, genres is set to an empty array, year of publication
-		/// and playing time are set to 0, and short description is set to an empty string.
+		/// and duration are set to 0, and short description is set to an empty string.
 		/// </summary>
 		public Movie()
 		{
 			_title = string.Empty;
 			_genres = new Genre[0];
 			_yearOfPublication = 0;
-			_playingTimeInMinutes = 0;
+			_durationInMinutes = 0;
 			_shortDescription = string.Empty;
 		}
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Movie"/> class with the specified values for title, genres,
-		/// year of publication, playing time in minutes, and short description. The genres array is cloned to ensure
+		/// year of publication, duration in minutes, and short description. The genres array is cloned to ensure
 		/// that the internal state of the movie is not affected by external changes to the array passed as an argument.
 		/// </summary>
 		/// <param name="title">
@@ -83,24 +83,24 @@ namespace AGoodMovie
 		/// <param name="yearOfPublication">
 		/// The year of publication of the movie.
 		/// </param>
-		/// <param name="playingTimeInMinutes">
-		/// The playing time of the movie in minutes.
+		/// <param name="durationInMinutes">
+		/// The duration of the movie in minutes.
 		/// </param>
 		/// <param name="shortDescription">
 		/// The short description of the movie.
 		/// </param>
-		public Movie(string title, Genre[] genres, int yearOfPublication, int playingTimeInMinutes, string shortDescription) : this()
+		public Movie(string title, Genre[] genres, int yearOfPublication, int durationInMinutes, string shortDescription) : this()
 		{
 			_title = title;
 			_genres = (Genre[])genres.Clone();
 			_yearOfPublication = yearOfPublication;
-			_playingTimeInMinutes = playingTimeInMinutes;
+			_durationInMinutes = durationInMinutes;
 			_shortDescription = shortDescription;
 		}
 
 		public override string ToString()
 		{
-			return $"{Title} ({YearOfPublication}) - {PlayingTimeInMinutes} minutes - Genres: {string.Join(", ", Genres)}\nDescription: {ShortDescription}";
+			return $"{Title} ({YearOfPublication}) - {DurationInMinutes} minutes - Genres: {string.Join(", ", Genres)}\nDescription: {ShortDescription}";
 		}
 	}
 }

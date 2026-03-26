@@ -77,18 +77,18 @@ namespace AGoodMovie
 		}
 
 		/// <summary>
-		/// Filters the movies in the movie list by a specified maximum playing time in minutes.
-		/// Returns an array of movies that have a playing time less than or equal to the specified maximum,
+		/// Filters the movies in the movie list by a specified maximum duration in minutes.
+		/// Returns an array of movies that have a duration less than or equal to the specified maximum,
 		/// or an empty array if no matches are found.
 		/// </summary>
-		/// <param name="maxPlayingTimeInMinutes">The maximum playing time in minutes to filter by.</param>
+		/// <param name="maxDurationInMinutes">The maximum duration in minutes to filter by.</param>
 		/// <returns>An array of movies that match the criteria, or an empty array if no matches are found.</returns>
-		public Movie[] FilterMaxPlayingTime(int maxPlayingTimeInMinutes)
+		public Movie[] FilterMaxDuration(int maxDurationInMinutes)
 		{
 			List<Movie> filteredMovies = new List<Movie>();
 			foreach (Movie movie in Movies)
 			{
-				if (movie.PlayingTimeInMinutes <= maxPlayingTimeInMinutes)
+				if (movie.DurationInMinutes <= maxDurationInMinutes)
 				{
 					filteredMovies.Add(movie);
 				}

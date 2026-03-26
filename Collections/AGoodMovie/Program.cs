@@ -13,7 +13,7 @@
 			inception.Title = "Inception";
 			inception.Genres = [Genre.Action, Genre.SciFi];
 			inception.YearOfPublication = 2010;
-			inception.PlayingTimeInMinutes = 148;
+			inception.DurationInMinutes = 148;
 			inception.ShortDescription = "A thief enters dreams to plant an idea into a target's subconscious.";
 			movieList.Add(inception);
 
@@ -21,7 +21,7 @@
 			theDarkKnight.Title = "The Dark Knight";
 			theDarkKnight.Genres = [Genre.Action, Genre.Drama];
 			theDarkKnight.YearOfPublication = 2008;
-			theDarkKnight.PlayingTimeInMinutes = 152;
+			theDarkKnight.DurationInMinutes = 152;
 			theDarkKnight.ShortDescription = "Batman faces Joker, a chaotic criminal threatening Gotham's stability.";
 			movieList.Add(theDarkKnight);
 
@@ -29,7 +29,7 @@
 			superBad.Title = "Superbad";
 			superBad.Genres = [Genre.Comedy];
 			superBad.YearOfPublication = 2007;
-			superBad.PlayingTimeInMinutes = 113;
+			superBad.DurationInMinutes = 113;
 			superBad.ShortDescription = "Teen friends try to enjoy one last wild night before graduation.";
 			movieList.Add(superBad);
 
@@ -37,7 +37,7 @@
 			theHangover.Title = "The Hangover";
 			theHangover.Genres = [Genre.Comedy];
 			theHangover.YearOfPublication = 2009;
-			theHangover.PlayingTimeInMinutes = 100;
+			theHangover.DurationInMinutes = 100;
 			theHangover.ShortDescription = "Friends retrace steps after a wild Las Vegas bachelor party.";
 			movieList.Add(theHangover);
 
@@ -45,7 +45,7 @@
 			theForestGump.Title = "The Forest Gump";
 			theForestGump.Genres = [Genre.Drama, Genre.Romance];
 			theForestGump.YearOfPublication = 1994;
-			theForestGump.PlayingTimeInMinutes = 142;
+			theForestGump.DurationInMinutes = 142;
 			theForestGump.ShortDescription = "Kind-hearted man experiences historic events through extraordinary life.";
 			movieList.Add(theForestGump);
 
@@ -53,7 +53,7 @@
 			theShawshankRedemption.Title = "The Shawshank Redemption";
 			theShawshankRedemption.Genres = [Genre.Drama];
 			theShawshankRedemption.YearOfPublication = 1994;
-			theShawshankRedemption.PlayingTimeInMinutes = 142;
+			theShawshankRedemption.DurationInMinutes = 142;
 			theShawshankRedemption.ShortDescription = "Banker forms friendships while serving life sentence in prison.";
 			movieList.Add(theShawshankRedemption);
 
@@ -61,7 +61,7 @@
 			theConjuring.Title = "The Conjuring";
 			theConjuring.Genres = [Genre.Horror];
 			theConjuring.YearOfPublication = 2013;
-			theConjuring.PlayingTimeInMinutes = 112;
+			theConjuring.DurationInMinutes = 112;
 			theConjuring.ShortDescription = "Paranormal investigators help family terrorized by dark presence in their farmhouse.";
 			movieList.Add(theConjuring);
 
@@ -69,7 +69,7 @@
 			aQuietPlace.Title = "A Quiet Place";
 			aQuietPlace.Genres = [Genre.Horror, Genre.SciFi];
 			aQuietPlace.YearOfPublication = 2018;
-			aQuietPlace.PlayingTimeInMinutes = 90;
+			aQuietPlace.DurationInMinutes = 90;
 			aQuietPlace.ShortDescription = "Family must remain silent to survive in world invaded by sound-sensitive creatures.";
 			movieList.Add(aQuietPlace);
 
@@ -77,7 +77,7 @@
 			interstellar.Title = "Interstellar";
 			interstellar.Genres = [Genre.SciFi, Genre.Drama];
 			interstellar.YearOfPublication = 2014;
-			interstellar.PlayingTimeInMinutes = 169;
+			interstellar.DurationInMinutes = 169;
 			interstellar.ShortDescription = "Astronauts travel through wormhole to find new home for humanity as Earth deteriorates.";
 			movieList.Add(interstellar);
 
@@ -85,7 +85,7 @@
 			theMatrix.Title = "The Matrix";
 			theMatrix.Genres = [Genre.Action, Genre.SciFi];
 			theMatrix.YearOfPublication = 1999;
-			theMatrix.PlayingTimeInMinutes = 136;
+			theMatrix.DurationInMinutes = 136;
 			theMatrix.ShortDescription = "Hacker discovers reality is a simulated world controlled by machines.";
 			movieList.Add(theMatrix);
 
@@ -93,7 +93,7 @@
 			titanic.Title = "Titanic";
 			titanic.Genres = [Genre.Drama, Genre.Romance];
 			titanic.YearOfPublication = 1997;
-			titanic.PlayingTimeInMinutes = 195;
+			titanic.DurationInMinutes = 195;
 			titanic.ShortDescription = "Love story unfolds aboard ill-fated RMS Titanic during its maiden voyage.";
 			movieList.Add(titanic);
 
@@ -101,7 +101,7 @@
 			theNotebook.Title = "The Notebook";
 			theNotebook.Genres = [Genre.Romance];
 			theNotebook.YearOfPublication = 2004;
-			theNotebook.PlayingTimeInMinutes = 123;
+			theNotebook.DurationInMinutes = 123;
 			theNotebook.ShortDescription = "A love story between two people separated by circumstances.";
 			movieList.Add(theNotebook);
 
@@ -149,23 +149,23 @@
 				Console.WriteLine($"No movies found in genre {userSearchGenre}.");
 			}
 
-			// Filter movies by maximum playing time
-			Console.WriteLine("\nEnter a maximum playing time in minutes to filter movies:");
-			Console.Write("Max playing time in minutes: ");
-			int maxPlayingTime = int.Parse(Console.ReadLine()!);
-			Movie[] filteredMovies = movieList.FilterMaxPlayingTime(maxPlayingTime);
+			// Filter movies by maximum duration
+			Console.WriteLine("\nEnter a maximum duration in minutes to filter movies:");
+			Console.Write("Max duration in minutes: ");
+			int maxDuration = int.Parse(Console.ReadLine()!);
+			Movie[] filteredMovies = movieList.FilterMaxDuration(maxDuration);
 			
 			if (filteredMovies.Length > 0)
 			{
-				Console.WriteLine($"\nMovies with playing time less than or equal to {maxPlayingTime} minutes:");
+				Console.WriteLine($"\nMovies with duration less than or equal to {maxDuration} minutes:");
 				foreach (Movie movie in filteredMovies)
 				{
-					Console.WriteLine($"{movie.Title} - {movie.PlayingTimeInMinutes} minutes");
+					Console.WriteLine($"{movie.Title} - {movie.DurationInMinutes} minutes");
 				}
 			}
 			else
 			{
-				Console.WriteLine($"No movies found with playing time less than or equal to {maxPlayingTime} minutes.");
+				Console.WriteLine($"No movies found with playing time less than or equal to {maxDuration} minutes.");
 			}
 		}
 	}
