@@ -70,4 +70,8 @@
 		<Project Path="Collections/TelephoneQueue/TelephoneQueue.csproj" />
 	</Folder>
 
+	<Folder Name="/InheritanceAndPolymorphism/">
+		<Project Path="InheritanceAndPolymorphism/DeviceDynasty/DeviceDynasty.csproj" />
+	</Folder>
+
 </Solution>
