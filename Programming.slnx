@@ -73,6 +73,7 @@
 	<Folder Name="/InheritanceAndPolymorphism/">
 		<Project Path="InheritanceAndPolymorphism/DeviceDynasty/DeviceDynasty.csproj" />
 		<Project Path="InheritanceAndPolymorphism/TheQuintet/TheQuintet.csproj" />
+		<Project Path="InheritanceAndPolymorphism/VroomVroom/VroomVroom.csproj" />
 	</Folder>
 
 </Solution>
